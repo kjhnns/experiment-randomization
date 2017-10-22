@@ -35,10 +35,10 @@ func Home(c *gin.Context) {
 	mode := rand.Intn(4)
 
 	urls := []string{
-		"https://juntoapp.github.io/onboarding/0.html",
-		"https://juntoapp.github.io/onboarding/p.html",
-		"https://juntoapp.github.io/onboarding/pc.html",
-		"https://juntoapp.github.io/onboarding/c.html",
+		"https://juntoapp.github.io/0.html",
+		"https://juntoapp.github.io/p.html",
+		"https://juntoapp.github.io/pc.html",
+		"https://juntoapp.github.io/c.html",
 	}
 
 	c.Redirect(302, urls[mode])
